@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galerie – La Coudraie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-galerie">
+  <div id="header-container"></div>
+
+  <main class="galerie-page">
+    <h2>Galerie photo</h2>
+
+    <div class="gallery-filters">
+      <button data-filter="all" class="filter-btn active">Tout</button>
+      <button data-filter="cuisine" class="filter-btn">Cuisine</button>
+      <button data-filter="salon" class="filter-btn">Salon</button>
+      <button data-filter="chambre1" class="filter-btn">Chambre 1</button>
+      <button data-filter="salle-de-bain" class="filter-btn">Salle de bain</button>
+      <button data-filter="piscine" class="filter-btn">Piscine</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery">
+      <!-- Images seront générées automatiquement -->
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="Agrandissement" id="lightbox-img">
+    <span class="lightbox-arrow left" id="lightbox-prev">&#10094;</span>
+    <span class="lightbox-arrow right" id="lightbox-next">&#10095;</span>
+  </div>  
+
+  <script src="script.js"></script>
+  <script src="galerie.js"></script>
+</body>
+</html>

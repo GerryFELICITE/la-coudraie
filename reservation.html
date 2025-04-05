@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Réservation – La Coudraie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-reservation">
+  <div id="header-container"></div>
+
+  <main class="reservation-page">
+    <h2>Réserver votre séjour à La Coudraie</h2>
+
+    <section class="disponibilites">
+      <h3>Disponibilités</h3>
+      <p>(Calendrier fictif pour le moment)</p>
+      <img src="assets/images/exemple-calendrier.png" alt="Calendrier de disponibilité" class="calendar-placeholder" />
+    </section>
+
+    <section class="formulaire-reservation">
+      <h3>Formulaire de demande</h3>
+      <form action="#" method="POST">
+        <label>Nom :
+          <input type="text" name="nom" required />
+        </label>
+        <label>Email :
+          <input type="email" name="email" required />
+        </label>
+        <label>Date d’arrivée :
+          <input type="date" name="date_arrivee" required />
+        </label>
+        <label>Date de départ :
+          <input type="date" name="date_depart" required />
+        </label>
+        <label>Message (optionnel) :
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>

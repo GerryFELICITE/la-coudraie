@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – La Coudraie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-contact">
+  <div id="header-container"></div>
+
+  <main class="contact-page">
+    <h2>Nous contacter</h2>
+
+    <section class="contact-infos">
+      <p><strong>📍 Adresse :</strong> 123 Route de la Coudraie, 49640 Daumeray</p>
+      <p><strong>📞 Téléphone :</strong> <a href="tel:+33123456789">01 23 45 67 89</a></p>
+      <p><strong>📧 Email :</strong> <a href="mailto:contact@lacoudraie.fr">contact@lacoudraie.fr</a></p>
+    </section>
+
+    <section class="formulaire-contact">
+      <h3>Envoyez-nous un message</h3>
+      <form action="#" method="POST">
+        <label>Nom :
+          <input type="text" name="nom" required />
+        </label>
+        <label>Email :
+          <input type="email" name="email" required />
+        </label>
+        <label>Message :
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
