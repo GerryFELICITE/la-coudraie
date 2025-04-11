@@ -570,7 +570,51 @@ body {
   .formulaire-contact button:hover {
     background-color: #388e3c;
     transform: scale(1.02);
-  }  
+  }
+
+  /*=== Merci ===*/
+
+  .page-merci main {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .merci-message {
+    text-align: center;
+    background-color: #f0f8f4;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .merci-message h2 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+  }
+
+  .merci-message p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .btn-retour {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn-retour:hover {
+    background-color: #388e3c;
+  }
 
   /* ===== Mentions légales ===== */
 .mentions-page {

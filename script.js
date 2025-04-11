@@ -26,8 +26,11 @@ window.addEventListener("DOMContentLoaded", () => {
 const hero = document.getElementById("hero");
 
 const heroImages = [
-  "assests/images/accueil/diaporama/20190114_122001 (1).jpg",
-  "assests/images/accueil/diaporama/20190114_122016.jpg"
+  "assests/images/galerie/jardin/jardin7.jpg",
+  "assests/images/galerie/sdj/sdj2.jpg",
+  "assests/images/galerie/salon/salon3.jpg",
+  "assests/images/galerie/veranda/veranda2.jpg",
+  "assests/images/galerie/piscine/piscine3.jpg"
 ];
 
 let heroIndex = 0;
