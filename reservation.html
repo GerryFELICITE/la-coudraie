@@ -5,46 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Réservation – La Coudraie</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reservation.css" />
+  <!-- FullCalendar CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" rel="stylesheet" />
 </head>
 <body class="page-reservation">
   <div id="header-container"></div>
 
-  <main class="reservation-page">
-    <h2>Réserver votre séjour à La Coudraie</h2>
+<main class="reservation-page">
+  <h2>Réserver votre séjour à La Coudraie</h2>
 
-    <section class="disponibilites">
-      <h3>Disponibilités</h3>
-      <p>(Calendrier fictif pour le moment)</p>
-      <img src="assets/images/exemple-calendrier.png" alt="Calendrier de disponibilité" class="calendar-placeholder" />
-    </section>
+  <section class="disponibilites">
+    <h3>Disponibilités</h3>
+    <div id="dispos-message">Chargement en cours...</div>
+    <ul id="liste-dispos"></ul>
+    <!-- FullCalendar -->
+    <div id="calendar"></div>
+  </section>
 
-    <section class="formulaire-reservation">
-      <h3>Formulaire de demande</h3>
-      <form action="https://formsubmit.co/marcantoine.letort@gmail.com" method="POST">
-        <input type="hidden" name="_formsubmit_id" style="display: none;">
-        <input type="hidden" name="_redirect" value="merci.html?source=reservation">
-        <input type="hidden" name="source" value="Nouvelle demande de réservation">
-        <label>Nom :
-          <input type="text" name="nom" required />
-        </label>
-        <label>Email :
-          <input type="email" name="email" required />
-        </label>
-        <label>Date d’arrivée :
-          <input type="date" name="date_arrivee" required />
-        </label>
-        <label>Date de départ :
-          <input type="date" name="date_depart" required />
-        </label>
-        <label>Message (optionnel) :
-          <textarea name="message" rows="4"></textarea>
-        </label>
-        <button type="submit">Envoyer la demande</button>
-      </form>
-    </section>
-  </main>
+  <section class="formulaire-reservation">
+    <h3>Formulaire de demande</h3>
+    <form action="https://formsubmit.co/marcantoine.letort@gmail.com" method="POST">
+      <input type="hidden" name="_formsubmit_id" style="display: none;">
+      <input type="hidden" name="_redirect" value="merci.html?source=reservation">
+      <input type="hidden" name="source" value="Nouvelle demande de réservation">
+      <label>Nom :
+        <input type="text" name="nom" required />
+      </label>
+      <label>Email :
+        <input type="email" name="email" required />
+      </label>
+      <label>Date d’arrivée :
+        <input type="date" name="date_arrivee" required />
+      </label>
+      <label>Date de départ :
+        <input type="date" name="date_depart" required />
+      </label>
+      <label>Message (optionnel) :
+        <textarea name="message" rows="4"></textarea>
+      </label>
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </section>
+</main>
 
-  <div id="footer-container"></div>
+<div id="footer-container"></div>
   <script src="script.js"></script>
+  <!-- Chargement de jQuery avant FullCalendar -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> <!-- Utilisation de la version 2.x -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <!-- FullCalendar JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/fr.js"></script>
+  <script src="reservation.js"></script>
 </body>
 </html>
