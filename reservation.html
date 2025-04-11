@@ -21,7 +21,9 @@
     <section class="formulaire-reservation">
       <h3>Formulaire de demande</h3>
       <form action="https://formsubmit.co/marcantoine.letort@gmail.com" method="POST">
-        <input type="hidden" name="_redirect" value="merci.html">
+        <input type="hidden" name="_formsubmit_id" style="display: none;">
+        <input type="hidden" name="_redirect" value="merci.html?source=reservation">
+        <input type="hidden" name="source" value="Nouvelle demande de réservation">
         <label>Nom :
           <input type="text" name="nom" required />
         </label>

@@ -10,15 +10,33 @@
 <div id="header-container"></div>
 
 <main class="merci-page">
-    <section class="merci-message">
-        <h2>Merci pour votre demande !</h2>
-        <p>Nous avons bien reçu votre message et vous contacterons rapidement pour confirmer votre réservation.</p>
-        <p>À très bientôt à <strong>La Coudraie</strong> 🌿</p>
-        <a href="index.html" class="btn-retour">Retour à l'accueil</a>
+    <section class="merci-message" id="merci-message">
+        <!-- Le contenu sera injecté ici par le script -->
     </section>
 </main>
 
 <div id="footer-container"></div>
 <script src="script.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const source = params.get('source');
+  const container = document.getElementById('merci-message');
+
+  let title = "Merci pour votre message !";
+  let message1 = "Nous avons bien reçu votre demande et vous répondrons dans les plus brefs délais.";
+  let message2 = "À très bientôt à <strong>La Coudraie</strong> 🌿";
+
+  if (source === "reservation") {
+    title = "Merci pour votre demande de réservation !";
+    message1 = "Nous avons bien reçu votre message et vous contacterons rapidement pour confirmer votre réservation.";
+  }
+
+  container.innerHTML = `
+    <h2>${title}</h2>
+    <p>${message1}</p>
+    <p>${message2}</p>
+    <a href="index.html" class="btn-retour">Retour à l'accueil</a>
+  `;
+</script>
 </body>
 </html>
